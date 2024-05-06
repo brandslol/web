@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <style>
+        /* Color styling */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation-name: slideIn;
+            animation-duration: 10s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Image animation */
+        .image img {
+            opacity: 0;
+            animation-name: fadeIn;
+            animation-duration: 7s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the CSS Demo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="demos.html">Demos</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="qualification.html">Qualification</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>This is a CSS demo page showcasing various styling techniques.</p>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>The code styles a header element, setting its background color, text color, padding, and alignment to center.</li>
+                <li>It applies an animation called "slideIn" to the header, making it slide in from the top.</li>
+                <li>The "slideIn" animation is defined using keyframes, starting from a position translated up by 100% and ending at its normal position.</li>
+            </ul>
+        </section>
+
+        <section class="image">
+            <h2>Image</h2>
+            <img src="Screenshot 2024-05-06 174314.png" alt="Example Image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSS Demo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
